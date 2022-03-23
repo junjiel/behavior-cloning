@@ -8,6 +8,7 @@ from keras.layers.convolutional import Conv2D
 from keras.layers.pooling import MaxPooling2D
 from keras.layers import Cropping2D
 import matplotlib.pyplot as plt
+from keras.utils.vis_utils import plot_model
 
 ### Load the data
 lines = []
@@ -75,6 +76,8 @@ model.compile(loss = 'mse', optimizer = 'adam')
 history_object = model.fit(X_train, y_train, validation_split = 0.2, shuffle= True, nb_epoch = 3, verbose=1)
 
 model.save('model.h5')
+print(model.summary())
+plot_model(model, to_file='model_plot.png', show_shapes=True, show_layer_names=True)
 
 ### for visualizing loss
 ### print the keys contained in the history object

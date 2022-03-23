@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
+[image1]: ./model_plot.png "Model Visualization"
 [image2]: ./examples/placeholder.png "Grayscaling"
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
@@ -90,7 +90,8 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 #### 2. Final Model Architecture
 
-The final model architecture consisted of a convolution neural network with the following layers and layer sizes. It has 1 crop layer, one Lambda layer, 5 conv layers and 4 fully connected layers.
+Below is the summary of the model architecture.
+![alt text][image1]
 
 
 
